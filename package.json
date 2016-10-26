@@ -1,0 +1,33 @@
+{
+  "name": "lasso-generated-output-issue",
+  "version": "1.0.0",
+  "description": "Lasso generated output issue",
+  "repository": "https://github.com/schetnikovich/lasso-generated-output-issue",
+  "license": "ISC",
+
+  "main": "src/server.js",
+  "scripts": {
+    "start": "./node_modules/.bin/browser-refresh src/server.js",
+    "marko-compile": "./node_modules/.bin/markoc .",
+    "marko-clean": "./node_modules/.bin/markoc . --clean",
+    "build": "node src/build.js"
+  },
+
+  "dependencies": {
+    "async": "2.1.2",
+    "compression": "1.6.2",
+    "express": "4.14.0",
+    "lasso": "2.6.1",
+    "lasso-less": "2.3.1",
+    "lasso-marko": "2.0.7",
+    "marko": "3.11.8",
+    "marko-widgets": "6.3.7",
+    "normalize.css": "5.0.0"
+  },
+
+  "devDependencies": {
+    "browser-refresh-client": "1.1.4",
+    "browser-refresh-taglib": "1.1.0",
+    "browser-refresh": "1.6.0"
+  }
+}
